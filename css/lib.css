@@ -62,3 +62,18 @@ header .big-partner img{
 		margin-top: 2em;
 	}
 }
+/*footer*/
+footer{
+	margin-top: 2.5em;
+}
+footer div{
+	background: #444f60;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	padding: 2.5em
+}
+footer div h3{
+	font-weight: 400;
+	font-size: 20px;
+}

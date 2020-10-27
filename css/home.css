@@ -1,0 +1,147 @@
+/*home*/
+/*partner logo*/
+.partner .row {
+	border-bottom: 0.5px solid #d5d5d5;
+}
+.partner .row:last-child{
+	border: none;;
+}
+.partner .row > div{
+	width: calc(100%/7);
+	height: 100px;
+	padding:  1em;
+	position: relative;
+}
+.partner .row .logo{
+	border-right: 1px solid #d5d5d5;
+}
+.partner .row .logolast{
+	border:none;
+}
+@media only screen and (max-width: 1024px)
+{
+	.partner .row > div{
+		width: calc(100%/5);
+	}
+	.partner .row .blank{
+		display: none;
+	}
+	.partner .row .logo-3{
+		width: calc(100%/3);
+	}
+}
+@media only screen and (max-width: 922px){
+	.partner .row .logo-3{
+		width: calc(100%/3);
+	}
+	.partner .row .blank2 {
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px){
+	.partner .row {
+		border-bottom: none;
+	}
+	.partner .row > div{
+		width: 100%;
+		height: 100px;
+		border: 1px solid #d5d5d5;
+		margin: 1.5em 2em;
+		border-radius: 5px; 
+	}
+	.partner .row .logolast{
+		border: 1px solid #d5d5d5;
+	}
+	.partner .row .logo-3{
+		width: 100%;
+	}
+
+}
+
+.partner .row div.logo img{
+	width: 100%;
+	position: relative;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	filter: grayscale(100%);
+	transition: 0.5s;
+}
+@media only screen and (max-width: 768px){
+	.partner .row div.logo img{
+		height: 100%;
+		width: auto;
+	}
+}
+.partner .row div.logo img:hover{
+	filter: grayscale(0%);	
+}
+
+/*team*/
+.team {
+	background: #f5f9fc;
+}
+.team h4{
+	text-align: center;
+	padding: 1em;
+	font-size: 43px;
+}
+.team .row .member {
+	padding: 1em;
+}
+.team .row .member figure{
+	border-radius: 10px;
+	background: #fff;
+	overflow: hidden;
+	background-color: red;
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%; 
+}
+.team .row .member figure::-webkit-scrollbar {
+	display: none;
+}
+.team .row .member img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	transition: .3s ease-in-out;
+}
+.team .row .member img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.team .row .member h5,.team .row .member h6{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 1em;
+	font-weight: 400;
+}
+.team .row .member h6{
+	color: red;
+}
+/*home */
+.activitys {
+	margin-top: 2.5em;
+}
+.activitys h4 {
+	text-align: center;
+	font-size: 43px;
+}
+.activitys .owl-carousel{
+	margin-top: 2em;
+}
+.activitys .owl-carousel figure{
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%; 
+	margin:0 50%;
+}
+.activitys .owl-carousel img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}

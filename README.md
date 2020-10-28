@@ -5,3 +5,4 @@ lam thanh navbar.
 xay dung file
 
 *thiếu kỹ năng chỉnh auto shape theo flex
+sử dung ơl cảoúel chưa oke lắm. phải chỉnh lại js

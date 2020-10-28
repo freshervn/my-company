@@ -163,6 +163,10 @@
 	padding-top: 60%; 
 	margin:0 50%;
 }
+@media only screen and (max-width: 768px){
+.activitys .owl-carousel figure{
+margin:0;}
+}
 .activitys .owl-carousel img{
 	width: 100%;
 	height: 100%;
@@ -180,15 +184,21 @@
 .activitys .owl-carousel .owl-dots .owl-dot.active span{
 	background: #bd2130;
 } 
-.activitys .owl-nav{
+.activitys .owl-carousel .owl-nav{
 	display: flex;
 	position: absolute;
 	top: 35%;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: 
+	space-between;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
 }
-.activitys .owl-nav button {
-	background: white !important;
+.activitys .owl-carousel:hover .owl-nav{
+	opacity: 1;
+}
+.activitys .owl-carousel .owl-nav button {
+	background: white;
 	width: 50px;
 	height: 50px;
 	border-radius: 50% !important;
@@ -196,17 +206,25 @@
 	position: relative;
 	background-image: url('img/icons/left.png') !important;
 	background-size: cover;
-	color: blue;
+	transform: rotate(0deg);
+	transition: 0.5s ease-in-out;
 }
-.activitys .owl-nav button span{
-	line-height: 50px;
+.activitys .owl-carousel .owl-nav button:hover{
+	transform: rotate(360deg);
+	background: #c8234a;
+}
+.activitys .owl-carousel .owl-nav button span{
+	text-align: center;
 	color: gray;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 20px;
 	transform: scale(3.0);
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform:translate(-50%,-50%);
-	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+.activitys .owl-nav button:hover span{
+	color: white;
 }

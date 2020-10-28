@@ -96,20 +96,44 @@
 	background-color: red;
 	position: relative;
 	width: 100%;
-	padding-top: 56.25%; 
+	padding-top: 60%; 
 }
 .team .row .member figure::-webkit-scrollbar {
 	display: none;
 }
-.team .row .member img{
+.team .row .member figure img{
 	width: 100%;
+	height: 100%;
 	position: absolute;
-	top: 0;
+	top: 0%;
+	left: 0%;
 	transition: .3s ease-in-out;
 }
-.team .row .member img:hover{
+.team .row .member:hover figure  img{
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
+}
+.team .row .member figure::after {
+	content: "";
+	width: 0%;
+	height: 0%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	background:#7FFFD4;
+	z-index: 100;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+.team .row .member:hover figure::after{
+	opacity: 0.3;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	width: 150%;
+	height: 150%;
 }
 .team .row .member h5,.team .row .member h6{
 	text-transform: uppercase;
@@ -136,7 +160,7 @@
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	padding-top: 56.25%; 
+	padding-top: 60%; 
 	margin:0 50%;
 }
 .activitys .owl-carousel img{
@@ -144,4 +168,45 @@
 	height: 100%;
 	position: absolute;
 	top: 0;
+	padding: 0.5em;
+}
+.activitys .owl-carousel .owl-dots .owl-dot{
+	outline: none;
+}
+.activitys .owl-carousel .owl-dots .owl-dot span{
+	width: 8px;
+	height: 8px;
+}
+.activitys .owl-carousel .owl-dots .owl-dot.active span{
+	background: #bd2130;
+} 
+.activitys .owl-nav{
+	display: flex;
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	justify-content: space-between;
+}
+.activitys .owl-nav button {
+	background: white !important;
+	width: 50px;
+	height: 50px;
+	border-radius: 50% !important;
+	outline: none;
+	position: relative;
+	background-image: url('img/icons/left.png') !important;
+	background-size: cover;
+	color: blue;
+}
+.activitys .owl-nav button span{
+	line-height: 50px;
+	color: gray;
+	font-weight: 700;
+	font-size: 50px;
+	transform: scale(3.0);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	opacity: 0;
 }

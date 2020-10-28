@@ -3,9 +3,9 @@
 <!-- hieu ung va an chua chuan -->
 
 <!-- header -->
-<!-- co navbar -->
-<!-- background-image -->
-<!-- pic mau -->
+<!-- navbar khi thu nho -->
+<!-- mau sac-->
+
 <!-- reponsive batws dau tu md -->
 <!-- đên sm thi thay doi ảnh bên dưới -->
 <!-- logo trắng -->
@@ -20,6 +20,8 @@
 	<link rel="icon" href="" type="image/x-icon?" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1.0">
+	<!-- icon -->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 	<!-- bootrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -37,47 +39,55 @@
 	<!-- link css -->
 	<link rel="stylesheet" type="text/css" href="css/lib.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<!-- js -->
+	<script src="js/lib.js"></script>
+
 </head>
 <body>
-	<header class="container-fluid">
+	<header class="">
+		<div class="contain-nav fixed-top container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-dark container ">
+				<a class="navbar-brand" href="#">Fago Group</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<!-- <span class="navbar-toggler-icon"></span> -->
+					<i class='fas fa-bars'></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="underline"></span>Trang chủ</a>
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="underline"></span>Danh mục đầu tư</a>
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#"><span class="underline"></span>Đội ngũ</a>
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="underline"></span>Hình ảnh hoạt động</a>
+							<!-- <span class="underline"></span> -->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="underline"></span>Liên hệ</a>
+							<!-- <span class="underline"></span> -->
+						</li>
 
-		<nav class="navbar navbar-expand-lg navbar-dark container fixed-top">
-			<a class="navbar-brand" href="#">Fago Group</a>
+					</ul>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Trang chủ <span class="sr-only"></span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Danh mục đầu tư</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="#">Đội ngũ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Hình ảnh hoạt động</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Liên hệ</a>
-					</li>
-				</ul>
-
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"><img src="img/icons/vn.jpg"></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><img src="img/icons/us.jpg"></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<script src="js/lib.js"></script>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><img src="img/icons/vn.jpg"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><img src="img/icons/us.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 		<!-- chua fix xong -->
 		<div class="intro-container">
 			<h1>Fago Group</h1>
@@ -196,6 +206,7 @@
 				loop:true,
 				margin:10,
 				dots:true,
+				nav:false,
 				responsive:{
 					0:{
 						items:1

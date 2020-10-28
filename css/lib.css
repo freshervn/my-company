@@ -3,16 +3,42 @@ header{
 	color: white;
 	padding: 1.5em;
 }
-header nav{
-	background-color:transparent !important;
+@media only screen and (max-width:922px){
+	header .contain-nav{
+		background: #344258;
+	}
 }
-header nav a{
-	color: white !important;
-}
-header nav .navbar-brand {
+header .contain-nav nav .navbar-brand {
 	transform:scale(1.2);
 }
-header nav a img{
+header .contain-nav nav .nav-item {
+	position: relative;
+	overflow: hidden;
+}
+header .contain-nav nav .nav-item .underline{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: -100%;
+	background: white;
+	transition: .3s linear;
+}
+header .contain-nav nav .nav-item .nav-link:hover .underline{
+	left: 0;
+}
+header .contain-nav nav .nav-item .nav-link{
+	color: white;
+	font-size: 18px;
+}
+@media only screen and (max-width:922px){
+ 	header .contain-nav nav .nav-item {
+ 		text-align: center;
+ 		background: #344258;
+ 	}
+}
+header .contain-nav nav a img{
 	width: 30px;
 	height: 20px;
 	box-shadow: 1px 1px 1px 1px black;

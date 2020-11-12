@@ -1,6 +1,6 @@
 /*home*/
 /*partner logo*/
-.partner .row {
+/*.partner .row {
 	border-bottom: 0.5px solid #d5d5d5;
 }
 .partner .row:last-child{
@@ -76,7 +76,73 @@
 .partner .row div.logo img:hover{
 	filter: grayscale(0%);	
 }
+*/
+/*new partner */
+.partner{
+}
+.partner >h4{
+	padding: 20px;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: 700;
+}
+@media only screen and (max-width: 768px)
+{
+	.partner .grayscale{
+		display: none;
+	}
+}
+.partner .grayscale aside{
+	padding: 0;
+	box-sizing: border-box;
+}
+.partner .grayscale aside h5{
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+}
+.partner .grayscale aside h5:first-letter{
+	text-transform: uppercase;
+}
+.partner .grayscale aside .content{
+	box-sizing: border-box;
+	padding: 15px;
+}
+/* cot 2 logo*/
+.partner .grayscale aside.col-md-2 .content a{
+	width: 50%;
+}
+.partner .grayscale aside.col-md-2 .content img{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+	filter: grayscale(100%);
+	transition: 0.3 ease-in-out;
+}
+/*cot 1 logo*/
+.partner .grayscale aside.col-md-1 .content a{
+	width: 100%;
+}
+.partner .grayscale aside.col-md-1 .content img{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+	filter: grayscale(100%);
+	transition: 0.3 ease-in-out;
 
+}
+.partner .grayscale aside .content img:hover{
+	filter: none;
+}
+.partner .partner-mobi{
+	display: none;
+}
+@media only screen and (max-width: 768px)
+{
+.partner .partner-mobi{
+	display: block;
+}
+}
 /*team*/
 .team {
 	background: #f5f9fc;
@@ -164,67 +230,67 @@
 	margin:0 50%;
 }
 @media only screen and (max-width: 768px){
-.activitys .owl-carousel figure{
-margin:0;}
-}
-.activitys .owl-carousel img{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	padding: 0.5em;
-}
-.activitys .owl-carousel .owl-dots .owl-dot{
-	outline: none;
-}
-.activitys .owl-carousel .owl-dots .owl-dot span{
-	width: 8px;
-	height: 8px;
-}
-.activitys .owl-carousel .owl-dots .owl-dot.active span{
-	background: #bd2130;
-} 
-.activitys .owl-carousel .owl-nav{
-	display: flex;
-	position: absolute;
-	top: 35%;
-	width: 100%;
-	justify-content: 
-	space-between;
-	transition: 0.5s ease-in-out;
-	opacity: 0;
-}
-.activitys .owl-carousel:hover .owl-nav{
-	opacity: 1;
-}
-.activitys .owl-carousel .owl-nav button {
-	background: white;
-	width: 50px;
-	height: 50px;
-	border-radius: 50% !important;
-	outline: none;
-	position: relative;
-	background-image: url('img/icons/left.png') !important;
-	background-size: cover;
-	transform: rotate(0deg);
-	transition: 0.5s ease-in-out;
-}
-.activitys .owl-carousel .owl-nav button:hover{
-	transform: rotate(360deg);
-	background: #c8234a;
-}
-.activitys .owl-carousel .owl-nav button span{
-	text-align: center;
-	color: gray;
-	font-weight: 700;
-	font-size: 20px;
-	transform: scale(3.0);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform:translate(-50%,-50%);
-	transition: 0.5s ease-in-out;
-}
-.activitys .owl-nav button:hover span{
-	color: white;
-}
+	.activitys .owl-carousel figure{
+		margin:0;}
+	}
+	.activitys .owl-carousel img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		padding: 0.5em;
+	}
+	.activitys .owl-carousel .owl-dots .owl-dot{
+		outline: none;
+	}
+	.activitys .owl-carousel .owl-dots .owl-dot span{
+		width: 8px;
+		height: 8px;
+	}
+	.activitys .owl-carousel .owl-dots .owl-dot.active span{
+		background: #bd2130;
+	} 
+	.activitys .owl-carousel .owl-nav{
+		display: flex;
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		justify-content: 
+		space-between;
+		transition: 0.5s ease-in-out;
+		opacity: 0;
+	}
+	.activitys .owl-carousel:hover .owl-nav{
+		opacity: 1;
+	}
+	.activitys .owl-carousel .owl-nav button {
+		background: white;
+		width: 50px;
+		height: 50px;
+		border-radius: 50% !important;
+		outline: none;
+		position: relative;
+		background-image: url('img/icons/left.png') !important;
+		background-size: cover;
+		transform: rotate(0deg);
+		transition: 0.5s ease-in-out;
+	}
+	.activitys .owl-carousel .owl-nav button:hover{
+		transform: rotate(360deg);
+		background: #c8234a;
+	}
+	.activitys .owl-carousel .owl-nav button span{
+		text-align: center;
+		color: gray;
+		font-weight: 700;
+		font-size: 20px;
+		transform: scale(3.0);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%,-50%);
+		transition: 0.5s ease-in-out;
+	}
+	.activitys .owl-nav button:hover span{
+		color: white;
+	}
